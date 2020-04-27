@@ -1,0 +1,11 @@
+lovelace:
+  mode: yaml
+  resources: !include ui-resources.yaml
+  dashboards:
+    lovelace-dev:
+      mode: yaml
+      title: Development
+      show_in_sidebar: true
+      require_admin: true
+      icon: mdi:dev-to
+      filename: ui-lovelace-dev.yaml
