@@ -1,0 +1,280 @@
+---
+title: Lights
+icon: 'mdi:lightbulb'
+path: lights
+panel: true
+popup_cards:
+  light.kitchen_wall:
+    title: ""
+    style:
+      position: fixed
+      z-index: 999
+      top: 0
+      left: 0
+      height: 100%
+      width: 100%
+      display: block
+      align-items: center
+      justify-content: center
+      background: rgba(0, 0, 0, 0.0)
+      flex-direction: column
+      margin: 0
+      "--iron-icon-fill-color": "#FFF"
+    card:
+      type: custom:light-popup-card
+      entity: light.kitchen_wall
+      brightnessWidth: 150px
+      brightnessHeight: 400px
+      switchWidth: 150px
+      switchHeight: 400px
+      sliderColoredByLight: true
+cards:
+  - type: custom:homekit-card
+    style: !include ../styles/homekit-card.yaml
+    enableColumns: true
+    rows:
+      - row: 1
+        columns:
+          - column: 1
+            entities:
+              - title: Downstairs
+                entities: 
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.bureau_back
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.bureau_front
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.computer_backlight
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.floss_top
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.floss_bottom
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.alessi
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.tv_ceiling
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.tv_backlight
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.living_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.dining_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardStyle: !include ../styles/graph-card.yaml
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.kitchen_island
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.kitchen_wall
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.laundry_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.storage_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.hallway_downstairs
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.shoe_cabinet
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.toilet
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.electricity_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.server_cabinet
+      - row: 2
+        columns:
+          - column: 1
+            entities:
+              - title: Upstairs
+                entities:
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.hallway_upstairs
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.stairway
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.hobby_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.guest_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.dressing_room
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.bathroom_mirror
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.bathroom
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.master_bedroom_back
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.master_bedroom_front
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.master_bedroom_bed_light_left
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.master_bedroom_bed_light_right
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.attic
+      - row: 3
+        columns:
+          - column: 2
+            entities:
+              - title: Outside
+                entities:
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.house_front
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.house_back
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.path_lighting
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.garden_house
+                  - card: custom:decluttering-card
+                    noPadding: true
+                    cardOptions:
+                      template: light-card
+                      variables:
+                        - entity: light.driveway_1

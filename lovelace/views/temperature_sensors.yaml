@@ -1,0 +1,142 @@
+    title: Temperature
+    icon: 'mdi:temperature-celsius'
+    path: temperature
+    panel: true
+    badges: []
+    cards:
+      - type: custom:homekit-card
+        style: !include ../styles/homekit-card.yaml
+        enableColumns: true
+        rows:
+          - row: 1
+            columns:
+              - column: 1
+                entities:
+                  - title: Downstairs
+                    entities:
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.hallway_downstairs_temperature
+                            - name: Hall Downstairs
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.dining_room_temperature
+                            - name: Dining Room
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.toilet_temperature
+                            - name: Toilet
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.storage_room_temperature
+                            - name: Storage Room
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.laundry_room_temperature
+                            - name: Laundry Room
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.shoe_cabinet_temperature
+                            - name: Shoe Cabinet
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.electricity_room_temperature
+                            - name: Electricity Room
+          - row: 2
+            columns:
+              - column: 1
+                entities:
+                  - title: Upstairs
+                    entities:
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.hallway_upstairs_temperature
+                            - name: Hall Upstairs
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.guest_bedroom_temperature
+                            - name: Guest Bedroom
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.hobby_room_temperature
+                            - name: Hobby Room
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.bathroom_temperature
+                            - name: Bathroom
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.dressing_room_temperature
+                            - name: Dressing Room
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.master_bedroom_temperature
+                            - name: Master Bedroom
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.attic_temperature
+                            - name: Attic
+                      - card: custom:decluttering-card
+                        noPadding: true
+                        cardStyle: !include ../styles/graph-card.yaml
+                        cardOptions:
+                          template: graph-card
+                          variables:
+                            - entity: sensor.driveway_temperature
+                            - name: Driveway

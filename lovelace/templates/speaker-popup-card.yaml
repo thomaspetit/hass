@@ -1,0 +1,41 @@
+default:
+  #required
+  - entity: ''
+  #optional
+  - show_group_count: true
+  - sync_volume: true
+card:
+  type: vertical-stack
+  cards:
+    - type: custom:mini-media-player
+      style: |
+        ha-card {
+          margin: 0px 12px;
+          box-shadow: none;
+        }
+      entity: '[[entity]]'
+      icon: 'mdi:speaker'
+      artwork: cover
+      source: full
+      hide:
+        power: true
+      speaker_group:
+        icon: 'mdi:select-group'
+        expanded: true
+        show_group_count: '[[show_group_count]]'
+        sync_volume: '[[sync_volume]]'
+        entities:
+          - entity_id: media_player.living_room
+            name: Living room
+          - entity_id: media_player.kitchen
+            name: Kitchen
+          - entity_id: media_player.bureau
+            name: Bureau
+          - entity_id: media_player.hobby_room
+            name: Hobby room
+          - entity_id: media_player.dressing_room
+            name: Dressing room
+          - entity_id: media_player.bathroom
+            name: Bathroom
+          - entity_id: media_player.garden_house
+            name: Garden house
